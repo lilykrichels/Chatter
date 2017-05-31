@@ -58,11 +58,11 @@ namespace Chatter_Spring17
             //   appId: "",
             //   appSecret: "");
 
-            //app.UseGoogleAuthentication(new GoogleOAuth2AuthenticationOptions()
-            //{
-            //    ClientId = "",
-            //    ClientSecret = ""
-            //});
+            app.UseGoogleAuthentication(new GoogleOAuth2AuthenticationOptions()
+            {
+                ClientId = "763558722272-peg6skvpovpgpn5354phdd65popapkt8.apps.googleusercontent.com",
+                ClientSecret = "N0szJV0jtiJ7UvfreNWd11Cn"
+            });
         }
     }
 }

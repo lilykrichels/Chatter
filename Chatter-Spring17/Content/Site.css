@@ -1,12 +1,13 @@
 ﻿body {
+    background-color:#d19ee0;
     padding-top: 50px;
     padding-bottom: 20px;
 }
 
 /* Set padding to keep content from hitting the edges */
 .body-content {
-    padding-left: 15px;
-    padding-right: 15px;
+    padding-left: 0px;
+    padding-right: 0px;
 }
 
 /* Override the default bootstrap behavior where horizontal description lists 
@@ -21,4 +22,22 @@ input,
 select,
 textarea {
     max-width: 280px;
+}
+
+/*Index page jumbotron*/
+.jumbotron{
+    padding: 0px;
+}
+.frontPagePicture {
+    background-image: url('../images/pexels-photo.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size:cover;
+    text-align:center;
+    padding: 100px;
+}
+
+.frontPageThumbnail
+{
+    text-align: center;
 }
