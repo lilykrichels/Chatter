@@ -49,6 +49,13 @@ textarea {
     text-align:center;
 }
 
+.form-group{
+    text-align: center;
+}
+.form-control{
+    display:inline;
+}
+
 .registerButton{
     text-align:center;
     float:inherit;
