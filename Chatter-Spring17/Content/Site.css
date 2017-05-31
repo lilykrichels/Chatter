@@ -1,7 +1,10 @@
 ﻿body {
-    background-color:#d19ee0;
+    background-color: #d19ee0;
     padding-top: 50px;
     padding-bottom: 20px;
+    background-image: url('../images/pexels-photo.jpg');
+    background-repeat:no-repeat;
+    background-size:cover;
 }
 
 /* Set padding to keep content from hitting the edges */
@@ -40,4 +43,13 @@ textarea {
 .frontPageThumbnail
 {
     text-align: center;
+}
+
+.signInForm{
+    text-align:center;
+}
+
+.registerButton{
+    text-align:center;
+    float:inherit;
 }

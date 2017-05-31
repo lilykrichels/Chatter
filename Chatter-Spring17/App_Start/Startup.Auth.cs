@@ -54,9 +54,9 @@ namespace Chatter_Spring17
             //   consumerKey: "",
             //   consumerSecret: "");
 
-            //app.UseFacebookAuthentication(
-            //   appId: "",
-            //   appSecret: "");
+            app.UseFacebookAuthentication(
+               appId: "765532710286400",
+               appSecret: "0e660df68ec7b4f5b7926790abd0d43c");
 
             app.UseGoogleAuthentication(new GoogleOAuth2AuthenticationOptions()
             {
