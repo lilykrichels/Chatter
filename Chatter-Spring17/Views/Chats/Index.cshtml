@@ -1,0 +1,69 @@
+﻿@model IEnumerable<Chatter_Spring17.Models.Chat>
+
+@{
+    ViewBag.Title = "Index";
+}
+
+<h2>Index</h2>
+
+<p>
+    @Html.ActionLink("Create New", "Create")
+</p>
+
+<div id="response"></div>
+<button id="getChats" class="btn btn-primary">Get Chats</button>
+
+@section Scripts {
+    <script>
+        //JSON . . . Javascript object
+        //var jsonTest = { "ID": 1, "userID": 1, "Message": "Hello World" };
+        //now some jQuery
+        //$("#response").text(jsonTest.Message);
+
+        var jsonTest = { "firstName": "Bob", "lastName": "Sauce", "children": [{ "firstName": "Barbie", "age": 19 }, { "firstName": "Ron", "age": null }] }
+
+        //now some jQuery
+        //$("#response").text(jsonTest.children[0].age);
+
+        $("#response").text(jsonTest.children[1].age);
+
+    </script>
+}
+
+
+
+
+@*<table class="table">
+    <tr>
+        <th>
+            @Html.DisplayNameFor(model => model.Message)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.TimeStamp)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.AspNetUser.Email)
+        </th>
+        <th></th>
+    </tr>
+
+@foreach (var item in Model) {
+    <tr>
+        <td>
+            @Html.DisplayFor(modelItem => item.Message)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.TimeStamp)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.AspNetUser.Email)
+        </td>
+        <td>
+            @Html.ActionLink("Edit", "Edit", new { id=item.ChatID }) |
+            @Html.ActionLink("Details", "Details", new { id=item.ChatID }) |
+            @Html.ActionLink("Delete", "Delete", new { id=item.ChatID })
+        </td>
+    </tr>
+}
+
+</table>*@

@@ -12,13 +12,11 @@ namespace Chatter_Spring17.Models
     using System;
     using System.Collections.Generic;
     
-    public partial class Chat
+    public partial class C__MigrationHistory
     {
-        public int ChatID { get; set; }
-        public string Message { get; set; }
-        public System.DateTime TimeStamp { get; set; }
-        public string UserID { get; set; }
-    
-        public virtual AspNetUser AspNetUser { get; set; }
+        public string MigrationId { get; set; }
+        public string ContextKey { get; set; }
+        public byte[] Model { get; set; }
+        public string ProductVersion { get; set; }
     }
 }
